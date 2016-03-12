@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE70F6641C9410F500EE23D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70F6631C9410F500EE23D3 /* AppDelegate.swift */; };
-		EE70F6661C9410F500EE23D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70F6651C9410F500EE23D3 /* ViewController.swift */; };
-		EE70F6691C9410F500EE23D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE70F6671C9410F500EE23D3 /* Main.storyboard */; };
-		EE70F66B1C9410F500EE23D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE70F66A1C9410F500EE23D3 /* Assets.xcassets */; };
-		EE70F66E1C9410F500EE23D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE70F66C1C9410F500EE23D3 /* LaunchScreen.storyboard */; };
 		EE70F6791C9410F500EE23D3 /* MabatakiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70F6781C9410F500EE23D3 /* MabatakiTests.swift */; };
 		EE70F6841C9410F500EE23D3 /* MabatakiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70F6831C9410F500EE23D3 /* MabatakiUITests.swift */; };
+		EE70F6A61C94177B00EE23D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE70F6A01C94177B00EE23D3 /* Assets.xcassets */; };
+		EE70F6A71C94177B00EE23D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70F6A21C94177B00EE23D3 /* AppDelegate.swift */; };
+		EE70F6A81C94177B00EE23D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE70F6A31C94177B00EE23D3 /* LaunchScreen.storyboard */; };
+		EE70F6A91C94177B00EE23D3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE70F6A51C94177B00EE23D3 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +34,16 @@
 
 /* Begin PBXFileReference section */
 		EE70F6601C9410F500EE23D3 /* Mabataki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mabataki.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE70F6631C9410F500EE23D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE70F6651C9410F500EE23D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE70F6681C9410F500EE23D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EE70F66A1C9410F500EE23D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EE70F66D1C9410F500EE23D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EE70F66F1C9410F500EE23D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE70F6741C9410F500EE23D3 /* MabatakiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MabatakiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE70F6781C9410F500EE23D3 /* MabatakiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MabatakiTests.swift; sourceTree = "<group>"; };
 		EE70F67A1C9410F500EE23D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE70F67F1C9410F500EE23D3 /* MabatakiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MabatakiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE70F6831C9410F500EE23D3 /* MabatakiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MabatakiUITests.swift; sourceTree = "<group>"; };
 		EE70F6851C9410F500EE23D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE70F6A01C94177B00EE23D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE70F6A21C94177B00EE23D3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE70F6A41C94177B00EE23D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE70F6A51C94177B00EE23D3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +94,8 @@
 		EE70F6621C9410F500EE23D3 /* Mabataki */ = {
 			isa = PBXGroup;
 			children = (
-				EE70F6631C9410F500EE23D3 /* AppDelegate.swift */,
-				EE70F6651C9410F500EE23D3 /* ViewController.swift */,
-				EE70F6671C9410F500EE23D3 /* Main.storyboard */,
-				EE70F66A1C9410F500EE23D3 /* Assets.xcassets */,
-				EE70F66C1C9410F500EE23D3 /* LaunchScreen.storyboard */,
-				EE70F66F1C9410F500EE23D3 /* Info.plist */,
+				EE70F69F1C94177B00EE23D3 /* Resources */,
+				EE70F6A11C94177B00EE23D3 /* Application */,
 			);
 			path = Mabataki;
 			sourceTree = "<group>";
@@ -123,6 +116,24 @@
 				EE70F6851C9410F500EE23D3 /* Info.plist */,
 			);
 			path = MabatakiUITests;
+			sourceTree = "<group>";
+		};
+		EE70F69F1C94177B00EE23D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE70F6A01C94177B00EE23D3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE70F6A11C94177B00EE23D3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EE70F6A21C94177B00EE23D3 /* AppDelegate.swift */,
+				EE70F6A31C94177B00EE23D3 /* LaunchScreen.storyboard */,
+				EE70F6A51C94177B00EE23D3 /* Info.plist */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +240,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE70F66E1C9410F500EE23D3 /* LaunchScreen.storyboard in Resources */,
-				EE70F66B1C9410F500EE23D3 /* Assets.xcassets in Resources */,
-				EE70F6691C9410F500EE23D3 /* Main.storyboard in Resources */,
+				EE70F6A81C94177B00EE23D3 /* LaunchScreen.storyboard in Resources */,
+				EE70F6A61C94177B00EE23D3 /* Assets.xcassets in Resources */,
+				EE70F6A91C94177B00EE23D3 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE70F6661C9410F500EE23D3 /* ViewController.swift in Sources */,
-				EE70F6641C9410F500EE23D3 /* AppDelegate.swift in Sources */,
+				EE70F6A71C94177B00EE23D3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,18 +303,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EE70F6671C9410F500EE23D3 /* Main.storyboard */ = {
+		EE70F6A31C94177B00EE23D3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EE70F6681C9410F500EE23D3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EE70F66C1C9410F500EE23D3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE70F66D1C9410F500EE23D3 /* Base */,
+				EE70F6A41C94177B00EE23D3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -482,6 +484,7 @@
 				EE70F68A1C9410F500EE23D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE70F68B1C9410F500EE23D3 /* Build configuration list for PBXNativeTarget "MabatakiTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +493,7 @@
 				EE70F68D1C9410F500EE23D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE70F68E1C9410F500EE23D3 /* Build configuration list for PBXNativeTarget "MabatakiUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +502,7 @@
 				EE70F6901C9410F500EE23D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
