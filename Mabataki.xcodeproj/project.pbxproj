@@ -23,20 +23,12 @@
 			remoteGlobalIDString = EE70F65F1C9410F500EE23D3;
 			remoteInfo = Mabataki;
 		};
-		EE70F6801C9410F500EE23D3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EE70F6581C9410F500EE23D3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EE70F65F1C9410F500EE23D3;
-			remoteInfo = Mabataki;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EE70F6601C9410F500EE23D3 /* Mabataki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mabataki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE70F6741C9410F500EE23D3 /* MabatakiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MabatakiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE70F67A1C9410F500EE23D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE70F67F1C9410F500EE23D3 /* MabatakiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MabatakiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE70F6A01C94177B00EE23D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE70F6A21C94177B00EE23D3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE70F6A41C94177B00EE23D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,13 +52,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE70F67C1C9410F500EE23D3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,7 +69,6 @@
 			children = (
 				EE70F6601C9410F500EE23D3 /* Mabataki.app */,
 				EE70F6741C9410F500EE23D3 /* MabatakiTests.xctest */,
-				EE70F67F1C9410F500EE23D3 /* MabatakiUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,24 +180,6 @@
 			productReference = EE70F6741C9410F500EE23D3 /* MabatakiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EE70F67E1C9410F500EE23D3 /* MabatakiUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EE70F68E1C9410F500EE23D3 /* Build configuration list for PBXNativeTarget "MabatakiUITests" */;
-			buildPhases = (
-				EE70F67B1C9410F500EE23D3 /* Sources */,
-				EE70F67C1C9410F500EE23D3 /* Frameworks */,
-				EE70F67D1C9410F500EE23D3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EE70F6811C9410F500EE23D3 /* PBXTargetDependency */,
-			);
-			name = MabatakiUITests;
-			productName = MabatakiUITests;
-			productReference = EE70F67F1C9410F500EE23D3 /* MabatakiUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -228,10 +194,6 @@
 						CreatedOnToolsVersion = 7.2;
 					};
 					EE70F6731C9410F500EE23D3 = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = EE70F65F1C9410F500EE23D3;
-					};
-					EE70F67E1C9410F500EE23D3 = {
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = EE70F65F1C9410F500EE23D3;
 					};
@@ -252,7 +214,6 @@
 			targets = (
 				EE70F65F1C9410F500EE23D3 /* Mabataki */,
 				EE70F6731C9410F500EE23D3 /* MabatakiTests */,
-				EE70F67E1C9410F500EE23D3 /* MabatakiUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -269,13 +230,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EE70F6721C9410F500EE23D3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE70F67D1C9410F500EE23D3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,13 +256,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE70F67B1C9410F500EE23D3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -316,11 +263,6 @@
 			isa = PBXTargetDependency;
 			target = EE70F65F1C9410F500EE23D3 /* Mabataki */;
 			targetProxy = EE70F6751C9410F500EE23D3 /* PBXContainerItemProxy */;
-		};
-		EE70F6811C9410F500EE23D3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EE70F65F1C9410F500EE23D3 /* Mabataki */;
-			targetProxy = EE70F6801C9410F500EE23D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -448,7 +390,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyle.gearhart.MabatakiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "MabatakiTests/Components/Deck/MabatakiTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mabataki.app/Mabataki";
 			};
@@ -463,32 +405,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyle.gearhart.MabatakiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "MabatakiTests/Components/Deck/MabatakiTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mabataki.app/Mabataki";
-			};
-			name = Release;
-		};
-		EE70F68F1C9410F500EE23D3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = MabatakiUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kyle.gearhart.MabatakiUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Mabataki;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		EE70F6901C9410F500EE23D3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = MabatakiUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kyle.gearhart.MabatakiUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Mabataki;
-				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -518,15 +436,6 @@
 			buildConfigurations = (
 				EE70F68C1C9410F500EE23D3 /* Debug */,
 				EE70F68D1C9410F500EE23D3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EE70F68E1C9410F500EE23D3 /* Build configuration list for PBXNativeTarget "MabatakiUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EE70F68F1C9410F500EE23D3 /* Debug */,
-				EE70F6901C9410F500EE23D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
