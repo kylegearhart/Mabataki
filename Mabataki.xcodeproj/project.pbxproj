@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EE6792651C959A5000D344F2 /* CardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6792641C959A5000D344F2 /* CardTests.swift */; };
 		EE6792671C959AAC00D344F2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6792661C959AAC00D344F2 /* Card.swift */; };
+		EE6792691C95AC6800D344F2 /* DeckListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6792681C95AC6800D344F2 /* DeckListViewControllerTests.swift */; };
+		EE67926B1C95AC8500D344F2 /* DeckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE67926A1C95AC8500D344F2 /* DeckListViewController.swift */; };
 		EE70F6A61C94177B00EE23D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE70F6A01C94177B00EE23D3 /* Assets.xcassets */; };
 		EE70F6A71C94177B00EE23D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70F6A21C94177B00EE23D3 /* AppDelegate.swift */; };
 		EE70F6A81C94177B00EE23D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE70F6A31C94177B00EE23D3 /* LaunchScreen.storyboard */; };
@@ -29,6 +31,8 @@
 /* Begin PBXFileReference section */
 		EE6792641C959A5000D344F2 /* CardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTests.swift; sourceTree = "<group>"; };
 		EE6792661C959AAC00D344F2 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		EE6792681C95AC6800D344F2 /* DeckListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckListViewControllerTests.swift; sourceTree = "<group>"; };
+		EE67926A1C95AC8500D344F2 /* DeckListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckListViewController.swift; sourceTree = "<group>"; };
 		EE70F6601C9410F500EE23D3 /* Mabataki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mabataki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE70F6741C9410F500EE23D3 /* MabatakiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MabatakiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE70F67A1C9410F500EE23D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 			children = (
 				EE70F6AF1C958DE400EE23D3 /* Deck.swift */,
 				EE6792661C959AAC00D344F2 /* Card.swift */,
+				EE67926A1C95AC8500D344F2 /* DeckListViewController.swift */,
 			);
 			path = Deck;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 			children = (
 				EE70F6B21C958E3500EE23D3 /* DeckTests.swift */,
 				EE6792641C959A5000D344F2 /* CardTests.swift */,
+				EE6792681C95AC6800D344F2 /* DeckListViewControllerTests.swift */,
 			);
 			path = Deck;
 			sourceTree = "<group>";
@@ -248,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE70F6B01C958DE400EE23D3 /* Deck.swift in Sources */,
+				EE67926B1C95AC8500D344F2 /* DeckListViewController.swift in Sources */,
 				EE6792671C959AAC00D344F2 /* Card.swift in Sources */,
 				EE70F6A71C94177B00EE23D3 /* AppDelegate.swift in Sources */,
 			);
@@ -259,6 +266,7 @@
 			files = (
 				EE70F6B31C958E3500EE23D3 /* DeckTests.swift in Sources */,
 				EE6792651C959A5000D344F2 /* CardTests.swift in Sources */,
+				EE6792691C95AC6800D344F2 /* DeckListViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
