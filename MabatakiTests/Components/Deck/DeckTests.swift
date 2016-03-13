@@ -25,4 +25,40 @@ class DeckTests: XCTestCase {
         
         XCTAssert(deck.cards[0] == newCard)
     }
+
+    func test_getCardAtIndexOutOfBounds_returnsNoCard() {
+	let deck = Deck()
+
+	let secondCard = deck.cardAtIndex(1)
+
+	XCTAssertNil(secondCard)
+    }
+
+    func test_getCardAtIndexZero_givesFirstCard() {
+	var deck = Deck()
+	let firstCard = Card(front: "First", back: "First")
+	let secondCard = Card(front: "Second", back: "Second")
+
+	deck.addCard(firstCard)
+	deck.addCard(secondCard)
+
+	XCTAssert(deck.cardAtIndex(0)! == firstCard)
+    }
+
+    func test_getCardAtIndexFour_givesFifthCard() {
+	var deck = Deck()
+	let firstCard = Card(front: "First", back: "First")
+	let secondCard = Card(front: "Second", back: "Second")
+	let thirdCard = Card(front: "Third", back: "Third")
+	let fourthCard = Card(front: "Fourth", back: "Fourth")
+	let fifthCard = Card(front: "Fifth", back: "Fifth")
+
+	deck.addCard(firstCard)
+	deck.addCard(secondCard)
+	deck.addCard(thirdCard)
+	deck.addCard(fourthCard)
+	deck.addCard(fifthCard)
+
+	XCTAssert(deck.cardAtIndex(4)! == fifthCard)
+    }
 }

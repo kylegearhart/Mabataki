@@ -6,4 +6,12 @@ struct Deck {
         cards.append(card)
     }
     
+    func cardAtIndex(queryIndex: Int) -> Card? {
+	guard queryIndex < cards.count else {
+	    return nil
+	}
+
+	return cards[queryIndex]
+    }
+
 }

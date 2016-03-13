@@ -6,5 +6,7 @@ struct Card {
 extension Card: Equatable {}
 
 func ==(lhs: Card, rhs: Card) -> Bool {
-    return true
+    return
+	lhs.front == rhs.front &&
+	lhs.back == rhs.back
 }
