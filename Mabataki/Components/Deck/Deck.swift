@@ -7,11 +7,10 @@ struct Deck {
     }
     
     func cardAtIndex(queryIndex: Int) -> Card? {
-	guard queryIndex < cards.count else {
-	    return nil
-	}
+        guard queryIndex < cards.count else {
+            return nil
+        }
 
-	return cards[queryIndex]
+        return cards[queryIndex]
     }
-
 }

@@ -17,5 +17,4 @@ class CardTests: XCTestCase {
         XCTAssert(card.front == "Front Text")
         XCTAssert(card.back == "Back Text")
     }
-    
 }
