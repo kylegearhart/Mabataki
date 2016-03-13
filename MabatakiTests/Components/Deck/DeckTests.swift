@@ -9,4 +9,10 @@ class DeckTests: XCTestCase {
 
         XCTAssert(deck.title == "")
     }
+    
+    func test_initializingDeckWithTitle_setsCorrectTitle() {
+        let deck = Deck(title: "New Deck!")
+        
+        XCTAssert(deck.title == "New Deck!")
+    }
 }

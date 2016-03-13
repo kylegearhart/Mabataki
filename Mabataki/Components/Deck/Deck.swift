@@ -1,3 +1,3 @@
 struct Deck {
-    let title: String = ""
+    var title: String = ""
 }
