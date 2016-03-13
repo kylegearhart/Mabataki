@@ -8,6 +8,7 @@ class DeckTests: XCTestCase {
         let deck = Deck()
 
         XCTAssert(deck.title == "")
+	XCTAssert(deck.cards == [])
     }
     
     func test_initializingDeckWithTitle_setsCorrectTitle() {
