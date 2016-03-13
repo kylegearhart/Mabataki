@@ -1,3 +1,3 @@
-class Deck {
-
+struct Deck {
+    let title: String = ""
 }
