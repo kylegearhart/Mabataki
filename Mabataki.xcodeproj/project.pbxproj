@@ -12,7 +12,6 @@
 		EE70F6A61C94177B00EE23D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE70F6A01C94177B00EE23D3 /* Assets.xcassets */; };
 		EE70F6A71C94177B00EE23D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70F6A21C94177B00EE23D3 /* AppDelegate.swift */; };
 		EE70F6A81C94177B00EE23D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE70F6A31C94177B00EE23D3 /* LaunchScreen.storyboard */; };
-		EE70F6A91C94177B00EE23D3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE70F6A51C94177B00EE23D3 /* Info.plist */; };
 		EE70F6B01C958DE400EE23D3 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70F6AF1C958DE400EE23D3 /* Deck.swift */; };
 		EE70F6B31C958E3500EE23D3 /* DeckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70F6B21C958E3500EE23D3 /* DeckTests.swift */; };
 /* End PBXBuildFile section */
@@ -231,7 +230,6 @@
 			files = (
 				EE70F6A81C94177B00EE23D3 /* LaunchScreen.storyboard in Resources */,
 				EE70F6A61C94177B00EE23D3 /* Assets.xcassets in Resources */,
-				EE70F6A91C94177B00EE23D3 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
