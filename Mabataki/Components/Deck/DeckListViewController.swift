@@ -1,6 +1,17 @@
 import UIKit
 
 class DeckListViewController: UIViewController {
+    let router: Router
+    
+    init(router: Router) {
+        self.router = router
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -11,9 +22,13 @@ class DeckListViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(
             title: "Add Deck",
             style: .Plain,
-            target: nil,
-            action: nil
+            target: self,
+            action: Selector("openAddDeckViewController")
         )
+    }
+    
+    func openAddDeckViewController() {
+        router.showAddDeckViewController()
     }
 
 }
