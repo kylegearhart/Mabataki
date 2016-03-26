@@ -11,6 +11,8 @@
 		EE088B241C9FE6440072DF4E /* AddDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE088B231C9FE6440072DF4E /* AddDeckViewController.swift */; };
 		EE088B281C9FE9AF0072DF4E /* NavigationRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE088B271C9FE9AF0072DF4E /* NavigationRouterTests.swift */; };
 		EE088B2A1C9FEA1A0072DF4E /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE088B291C9FEA1A0072DF4E /* NavigationRouter.swift */; };
+		EE3558F81CA6CC2C00094122 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3558F71CA6CC2C00094122 /* Router.swift */; };
+		EE3558FA1CA6CC4400094122 /* FakeNavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3558F91CA6CC4400094122 /* FakeNavigationRouter.swift */; };
 		EE6792651C959A5000D344F2 /* CardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6792641C959A5000D344F2 /* CardTests.swift */; };
 		EE6792671C959AAC00D344F2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6792661C959AAC00D344F2 /* Card.swift */; };
 		EE6792691C95AC6800D344F2 /* DeckListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6792681C95AC6800D344F2 /* DeckListViewControllerTests.swift */; };
@@ -37,6 +39,8 @@
 		EE088B231C9FE6440072DF4E /* AddDeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDeckViewController.swift; sourceTree = "<group>"; };
 		EE088B271C9FE9AF0072DF4E /* NavigationRouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationRouterTests.swift; sourceTree = "<group>"; };
 		EE088B291C9FEA1A0072DF4E /* NavigationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		EE3558F71CA6CC2C00094122 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EE3558F91CA6CC4400094122 /* FakeNavigationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeNavigationRouter.swift; sourceTree = "<group>"; };
 		EE6792641C959A5000D344F2 /* CardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTests.swift; sourceTree = "<group>"; };
 		EE6792661C959AAC00D344F2 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		EE6792681C95AC6800D344F2 /* DeckListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckListViewControllerTests.swift; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				EE088B271C9FE9AF0072DF4E /* NavigationRouterTests.swift */,
+				EE3558F91CA6CC4400094122 /* FakeNavigationRouter.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -82,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				EE088B291C9FEA1A0072DF4E /* NavigationRouter.swift */,
+				EE3558F71CA6CC2C00094122 /* Router.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -284,6 +290,7 @@
 				EE70F6B01C958DE400EE23D3 /* Deck.swift in Sources */,
 				EE088B241C9FE6440072DF4E /* AddDeckViewController.swift in Sources */,
 				EE088B2A1C9FEA1A0072DF4E /* NavigationRouter.swift in Sources */,
+				EE3558F81CA6CC2C00094122 /* Router.swift in Sources */,
 				EE67926B1C95AC8500D344F2 /* DeckListViewController.swift in Sources */,
 				EE6792671C959AAC00D344F2 /* Card.swift in Sources */,
 				EE70F6A71C94177B00EE23D3 /* AppDelegate.swift in Sources */,
@@ -299,6 +306,7 @@
 				EE6792651C959A5000D344F2 /* CardTests.swift in Sources */,
 				EE088B281C9FE9AF0072DF4E /* NavigationRouterTests.swift in Sources */,
 				EE6792691C95AC6800D344F2 /* DeckListViewControllerTests.swift in Sources */,
+				EE3558FA1CA6CC4400094122 /* FakeNavigationRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
