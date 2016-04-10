@@ -1,0 +1,14 @@
+--- Carthage ---
+/Carthage/Build/
+
+--- Xcode ---
+DerivedData
+xcuserdata
+*.xccheckout
+*.xcuserstate
+
+--- OSX ---
+.DS_Store
+
+--- Intellij ---
+.idea/
