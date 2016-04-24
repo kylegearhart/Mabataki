@@ -23,13 +23,30 @@ class NavigationRouterTests: XCTestCase {
     }
     
     func test_showAddDeckScreen_presentsAddDeckViewControllerWithNavigationController() {
-        let navigationRouter = NavigationRouter(navigationController: navigationController)
-        
-        
         navigationRouter.showAddDeckViewController()
         
         
         let presentedNavigationController = navigationController.presentedViewController as! UINavigationController
         XCTAssert(presentedNavigationController.viewControllers[0].isKindOfClass(AddDeckViewController))
+    }
+    
+    func test_dismissPresentedViewController_dismissedCurrentlyPresentedViewController() {
+        navigationController.pushViewController(
+            UIViewController(),
+            animated: false
+        )
+        navigationController.presentViewController(
+            UIViewController(),
+            animated: false,
+            completion: nil
+        )
+        XCTAssertNotNil(navigationController.presentedViewController)
+        
+        
+        navigationRouter.dismissPresentedViewController()
+        NSRunLoop.mab_advance(by: 1)
+        
+        
+        XCTAssertNil(navigationController.presentedViewController)
     }
 }

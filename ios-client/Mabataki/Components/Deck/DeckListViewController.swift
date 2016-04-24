@@ -23,11 +23,11 @@ class DeckListViewController: UIViewController {
             title: "Add Deck",
             style: .Plain,
             target: self,
-            action: Selector("openAddDeckViewController")
+            action: #selector(openAddDeckViewController)
         )
     }
     
-    func openAddDeckViewController() {
+    @objc private func openAddDeckViewController() {
         router.showAddDeckViewController()
     }
 

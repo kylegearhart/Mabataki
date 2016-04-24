@@ -10,4 +10,9 @@ class FakeNavigationRouter: Router {
     func showAddDeckViewController() {
 	showAddDeckViewController_called = true
     }
+    
+    var dismissPresentedViewController_wasCalled = false
+    func dismissPresentedViewController() {
+        dismissPresentedViewController_wasCalled = true
+    }
 }

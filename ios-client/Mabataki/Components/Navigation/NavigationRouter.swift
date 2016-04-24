@@ -9,13 +9,23 @@ struct NavigationRouter: Router {
     }
     
     func showAddDeckViewController() {
-        let addDeckViewController = AddDeckViewController()
+        let addDeckViewController = AddDeckViewController(router: self)
         let addDeckNavigationController = UINavigationController()
-        addDeckNavigationController.setViewControllers([addDeckViewController], animated: true)
+        addDeckNavigationController.setViewControllers(
+            [addDeckViewController],
+            animated: true
+        )
         
         navigationController.presentViewController(
             addDeckNavigationController,
             animated: true,
+            completion: nil
+        )
+    }
+    
+    func dismissPresentedViewController() {
+        navigationController.dismissViewControllerAnimated(
+            true,
             completion: nil
         )
     }
