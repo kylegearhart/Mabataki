@@ -15,6 +15,7 @@
 		EE3558F81CA6CC2C00094122 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3558F71CA6CC2C00094122 /* Router.swift */; };
 		EE3558FA1CA6CC4400094122 /* FakeNavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3558F91CA6CC4400094122 /* FakeNavigationRouter.swift */; };
 		EE3614FD1CD35910007EA6EC /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3614FC1CD35910007EA6EC /* PureLayout.framework */; };
+		EE3614FE1CD35D4B007EA6EC /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3614FC1CD35910007EA6EC /* PureLayout.framework */; };
 		EE6792651C959A5000D344F2 /* CardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6792641C959A5000D344F2 /* CardTests.swift */; };
 		EE6792671C959AAC00D344F2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6792661C959AAC00D344F2 /* Card.swift */; };
 		EE6792691C95AC6800D344F2 /* DeckListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6792681C95AC6800D344F2 /* DeckListViewControllerTests.swift */; };
@@ -65,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3614FE1CD35D4B007EA6EC /* PureLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
