@@ -81,7 +81,8 @@ class AddDeckViewController: UIViewController {
         titleTextField.autoPinEdgeToSuperviewEdge(.Trailing)
         titleTextField.autoSetDimension(.Height, toSize: 50.0)
     }
-    
+
+    // MARK: Actions
     @objc private func dismissSelfAsPresentedViewController() {
         router.dismissPresentedViewController()
     }
