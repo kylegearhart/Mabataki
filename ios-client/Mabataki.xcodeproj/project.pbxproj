@@ -14,6 +14,7 @@
 		EE0FF6051CCCBF1200144FE5 /* ExtensionsForTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0FF6041CCCBF1200144FE5 /* ExtensionsForTest.swift */; };
 		EE3558F81CA6CC2C00094122 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3558F71CA6CC2C00094122 /* Router.swift */; };
 		EE3558FA1CA6CC4400094122 /* FakeNavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3558F91CA6CC4400094122 /* FakeNavigationRouter.swift */; };
+		EE3614FD1CD35910007EA6EC /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3614FC1CD35910007EA6EC /* PureLayout.framework */; };
 		EE6792651C959A5000D344F2 /* CardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6792641C959A5000D344F2 /* CardTests.swift */; };
 		EE6792671C959AAC00D344F2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6792661C959AAC00D344F2 /* Card.swift */; };
 		EE6792691C95AC6800D344F2 /* DeckListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6792681C95AC6800D344F2 /* DeckListViewControllerTests.swift */; };
@@ -43,6 +44,7 @@
 		EE0FF6041CCCBF1200144FE5 /* ExtensionsForTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsForTest.swift; sourceTree = "<group>"; };
 		EE3558F71CA6CC2C00094122 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		EE3558F91CA6CC4400094122 /* FakeNavigationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeNavigationRouter.swift; sourceTree = "<group>"; };
+		EE3614FC1CD35910007EA6EC /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = Carthage/Build/iOS/PureLayout.framework; sourceTree = SOURCE_ROOT; };
 		EE6792641C959A5000D344F2 /* CardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTests.swift; sourceTree = "<group>"; };
 		EE6792661C959AAC00D344F2 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		EE6792681C95AC6800D344F2 /* DeckListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckListViewControllerTests.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3614FD1CD35910007EA6EC /* PureLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,9 +97,19 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		EE0FF6091CCCD1C900144FE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE3614FC1CD35910007EA6EC /* PureLayout.framework */,
+			);
+			name = Frameworks;
+			path = Mabataki/Frameworks;
+			sourceTree = "<group>";
+		};
 		EE70F6571C9410F500EE23D3 = {
 			isa = PBXGroup;
 			children = (
+				EE0FF6091CCCD1C900144FE5 /* Frameworks */,
 				EE70F6621C9410F500EE23D3 /* Mabataki */,
 				EE70F6771C9410F500EE23D3 /* MabatakiTests */,
 				EE70F6611C9410F500EE23D3 /* Products */,
@@ -200,6 +213,7 @@
 				EE70F65C1C9410F500EE23D3 /* Sources */,
 				EE70F65D1C9410F500EE23D3 /* Frameworks */,
 				EE70F65E1C9410F500EE23D3 /* Resources */,
+				EE0FF6081CCCD15B00144FE5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -217,6 +231,7 @@
 				EE70F6701C9410F500EE23D3 /* Sources */,
 				EE70F6711C9410F500EE23D3 /* Frameworks */,
 				EE70F6721C9410F500EE23D3 /* Resources */,
+				EE407AE11CCCDB48003DF104 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -284,6 +299,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EE0FF6081CCCD15B00144FE5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/PureLayout.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		EE407AE11CCCDB48003DF104 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/PureLayout.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE70F65C1C9410F500EE23D3 /* Sources */ = {
@@ -421,6 +467,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Mabataki/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyle.gearhart.Mabataki;
@@ -432,6 +482,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Mabataki/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyle.gearhart.Mabataki;
@@ -444,6 +498,10 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MabatakiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyle.gearhart.MabatakiTests;
@@ -459,6 +517,10 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MabatakiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyle.gearhart.MabatakiTests;
