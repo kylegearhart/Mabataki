@@ -8,6 +8,12 @@ class AddDeckViewControllerTests: XCTestCase {
     override func setUp() {
         fakeRouter = FakeNavigationRouter()
         addDeckViewController = AddDeckViewController(router: fakeRouter)
+
+        var window: UIWindow?
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window!.rootViewController = addDeckViewController
+        window!.makeKeyAndVisible()
+
         addDeckViewController.view.setNeedsLayout()
     }
     
@@ -20,8 +26,22 @@ class AddDeckViewControllerTests: XCTestCase {
         
         
         UIApplication.mab_tapNavBarButton(closeBarButtonItem)
-        
+
         
         XCTAssertTrue(fakeRouter.dismissPresentedViewController_wasCalled)
     }
+
+    func test_viewDidLoad_showsTitleTextFieldHeaderLabel() {
+        XCTAssertEqual(
+            addDeckViewController.titleTextFieldHeaderLabel.text,
+            "Title"
+        )
+    }
+
+    func test_viewDidAppear_showsTitleEntryTextFieldAsFirstResponder() {
+        NSRunLoop.mab_advance(by: 1)
+
+        XCTAssertTrue(addDeckViewController.titleTextField.isFirstResponder())
+    }
+
 }
