@@ -20,6 +20,10 @@ class AddDeckViewControllerTests: XCTestCase {
     func test_viewDidLoad_showsCloseButton() {
         XCTAssertEqual(addDeckViewController.navigationItem.leftBarButtonItem?.title, "Close")
     }
+
+    func test_viewDidLoad_showsSaveNavigationBarButtonItem() {
+        XCTAssertEqual(addDeckViewController.navigationItem.rightBarButtonItem?.title, "Save")
+    }
     
     func test_tappingCloseButton_informsRouterToDismissPresentedViewController() {
         let closeBarButtonItem = addDeckViewController.navigationItem.leftBarButtonItem!

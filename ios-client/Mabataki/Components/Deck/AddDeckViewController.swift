@@ -50,6 +50,13 @@ class AddDeckViewController: UIViewController {
             target: self,
             action: #selector(dismissSelfAsPresentedViewController)
         )
+
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(
+            title: "Save",
+            style: .Plain,
+            target: self,
+            action: nil
+        )
     }
 
     private func addSubviews() {
