@@ -3,11 +3,16 @@ import XCTest
 
 class AddDeckViewControllerTests: XCTestCase {
     var fakeRouter: FakeNavigationRouter!
+    var fakeDeckRepository: FakeDeckRepository!
     var addDeckViewController: AddDeckViewController!
     
     override func setUp() {
         fakeRouter = FakeNavigationRouter()
-        addDeckViewController = AddDeckViewController(router: fakeRouter)
+        fakeDeckRepository = FakeDeckRepository()
+        addDeckViewController = AddDeckViewController(
+            router: fakeRouter,
+            deckRepository: fakeDeckRepository
+        )
 
         var window: UIWindow?
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
@@ -20,10 +25,6 @@ class AddDeckViewControllerTests: XCTestCase {
     func test_viewDidLoad_showsCloseButton() {
         XCTAssertEqual(addDeckViewController.navigationItem.leftBarButtonItem?.title, "Close")
     }
-
-    func test_viewDidLoad_showsSaveNavigationBarButtonItem() {
-        XCTAssertEqual(addDeckViewController.navigationItem.rightBarButtonItem?.title, "Save")
-    }
     
     func test_tappingCloseButton_informsRouterToDismissPresentedViewController() {
         let closeBarButtonItem = addDeckViewController.navigationItem.leftBarButtonItem!
@@ -33,6 +34,23 @@ class AddDeckViewControllerTests: XCTestCase {
 
         
         XCTAssertTrue(fakeRouter.dismissPresentedViewController_wasCalled)
+    }
+
+    func test_viewDidLoad_showsSaveNavigationBarButtonItem() {
+        XCTAssertEqual(addDeckViewController.navigationItem.rightBarButtonItem?.title, "Save")
+    }
+
+    func test_tappingSaveBarButtonItem_savesDeckWithEnteredTitle() {
+        let saveBarButtonItem = addDeckViewController.navigationItem.rightBarButtonItem!
+        let enteredTitle = "Title"
+
+
+        addDeckViewController.titleTextField.text = enteredTitle
+        UIApplication.mab_tapNavBarButton(saveBarButtonItem)
+
+
+        XCTAssertTrue(fakeDeckRepository.createDeck_wasCalled)
+        XCTAssertEqual(fakeDeckRepository.createDeck_arg, enteredTitle)
     }
 
     func test_viewDidLoad_showsTitleTextFieldHeaderLabel() {
@@ -47,5 +65,4 @@ class AddDeckViewControllerTests: XCTestCase {
 
         XCTAssertTrue(addDeckViewController.titleTextField.isFirstResponder())
     }
-
 }

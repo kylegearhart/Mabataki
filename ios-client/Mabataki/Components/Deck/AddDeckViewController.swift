@@ -1,17 +1,18 @@
-import UIKit
 import PureLayout
 
 class AddDeckViewController: UIViewController {
     // MARK: Properties
     private let router: Router
+    private let deckRepository: DeckRepository
 
     // MARK: View Elements
     let titleTextField: UITextField
     let titleTextFieldHeaderLabel: UILabel
 
     // MARK: Initializers
-    init(router: Router) {
+    init(router: Router, deckRepository: DeckRepository) {
         self.router = router
+        self.deckRepository = deckRepository
 
         self.titleTextField = UITextField.newAutoLayoutView()
         self.titleTextFieldHeaderLabel = UILabel.newAutoLayoutView()
@@ -36,6 +37,12 @@ class AddDeckViewController: UIViewController {
         addConstraints()
     }
 
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+
+        titleTextField.becomeFirstResponder()
+    }
+
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
 
@@ -55,7 +62,7 @@ class AddDeckViewController: UIViewController {
             title: "Save",
             style: .Plain,
             target: self,
-            action: nil
+            action: #selector(createDeckWithEnteredAttributes)
         )
     }
 
@@ -68,7 +75,6 @@ class AddDeckViewController: UIViewController {
         titleTextFieldHeaderLabel.text = "Title"
 
         titleTextField.backgroundColor = UIColor.whiteColor()
-        titleTextField.becomeFirstResponder()
     }
 
     private func addConstraints() {
@@ -92,5 +98,9 @@ class AddDeckViewController: UIViewController {
     // MARK: Actions
     @objc private func dismissSelfAsPresentedViewController() {
         router.dismissPresentedViewController()
+    }
+
+    @objc private func createDeckWithEnteredAttributes() {
+        deckRepository.createDeck(titleTextField.text!)
     }
 }

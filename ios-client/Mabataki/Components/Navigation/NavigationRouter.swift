@@ -9,7 +9,10 @@ struct NavigationRouter: Router {
     }
     
     func showAddDeckViewController() {
-        let addDeckViewController = AddDeckViewController(router: self)
+        let addDeckViewController = AddDeckViewController(
+            router: self,
+            deckRepository: PersistedDeckRepository()
+        )
         let addDeckNavigationController = UINavigationController()
         addDeckNavigationController.setViewControllers(
             [addDeckViewController],

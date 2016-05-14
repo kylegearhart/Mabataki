@@ -25,6 +25,9 @@
 		EE70F6A81C94177B00EE23D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE70F6A31C94177B00EE23D3 /* LaunchScreen.storyboard */; };
 		EE70F6B01C958DE400EE23D3 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70F6AF1C958DE400EE23D3 /* Deck.swift */; };
 		EE70F6B31C958E3500EE23D3 /* DeckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70F6B21C958E3500EE23D3 /* DeckTests.swift */; };
+		EE7A1C2F1CE73A53007F75D3 /* FakeDeckRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7A1C2E1CE73A53007F75D3 /* FakeDeckRepository.swift */; };
+		EE7A1C311CE73AE7007F75D3 /* PersistedDeckRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7A1C301CE73AE7007F75D3 /* PersistedDeckRepository.swift */; };
+		EE7A1C331CE73C03007F75D3 /* DeckRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7A1C321CE73C03007F75D3 /* DeckRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		EE70F6A51C94177B00EE23D3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE70F6AF1C958DE400EE23D3 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		EE70F6B21C958E3500EE23D3 /* DeckTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckTests.swift; sourceTree = "<group>"; };
+		EE7A1C2E1CE73A53007F75D3 /* FakeDeckRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeDeckRepository.swift; sourceTree = "<group>"; };
+		EE7A1C301CE73AE7007F75D3 /* PersistedDeckRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistedDeckRepository.swift; sourceTree = "<group>"; };
+		EE7A1C321CE73C03007F75D3 /* DeckRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +187,8 @@
 				EE6792661C959AAC00D344F2 /* Card.swift */,
 				EE67926A1C95AC8500D344F2 /* DeckListViewController.swift */,
 				EE088B231C9FE6440072DF4E /* AddDeckViewController.swift */,
+				EE7A1C301CE73AE7007F75D3 /* PersistedDeckRepository.swift */,
+				EE7A1C321CE73C03007F75D3 /* DeckRepository.swift */,
 			);
 			path = Deck;
 			sourceTree = "<group>";
@@ -201,6 +209,7 @@
 				EE6792641C959A5000D344F2 /* CardTests.swift */,
 				EE6792681C95AC6800D344F2 /* DeckListViewControllerTests.swift */,
 				EE088B211C9FE5790072DF4E /* AddDeckViewControllerTests.swift */,
+				EE7A1C2E1CE73A53007F75D3 /* FakeDeckRepository.swift */,
 			);
 			path = Deck;
 			sourceTree = "<group>";
@@ -340,6 +349,8 @@
 			files = (
 				EE70F6B01C958DE400EE23D3 /* Deck.swift in Sources */,
 				EE088B241C9FE6440072DF4E /* AddDeckViewController.swift in Sources */,
+				EE7A1C331CE73C03007F75D3 /* DeckRepository.swift in Sources */,
+				EE7A1C311CE73AE7007F75D3 /* PersistedDeckRepository.swift in Sources */,
 				EE088B2A1C9FEA1A0072DF4E /* NavigationRouter.swift in Sources */,
 				EE3558F81CA6CC2C00094122 /* Router.swift in Sources */,
 				EE67926B1C95AC8500D344F2 /* DeckListViewController.swift in Sources */,
@@ -353,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE70F6B31C958E3500EE23D3 /* DeckTests.swift in Sources */,
+				EE7A1C2F1CE73A53007F75D3 /* FakeDeckRepository.swift in Sources */,
 				EE088B221C9FE5790072DF4E /* AddDeckViewControllerTests.swift in Sources */,
 				EE6792651C959A5000D344F2 /* CardTests.swift in Sources */,
 				EE088B281C9FE9AF0072DF4E /* NavigationRouterTests.swift in Sources */,
