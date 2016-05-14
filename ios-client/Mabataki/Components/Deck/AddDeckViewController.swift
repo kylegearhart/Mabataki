@@ -102,5 +102,6 @@ class AddDeckViewController: UIViewController {
 
     @objc private func createDeckWithEnteredAttributes() {
         deckRepository.createDeck(titleTextField.text!)
+        dismissSelfAsPresentedViewController()
     }
 }

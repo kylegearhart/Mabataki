@@ -53,6 +53,16 @@ class AddDeckViewControllerTests: XCTestCase {
         XCTAssertEqual(fakeDeckRepository.createDeck_arg, enteredTitle)
     }
 
+    func test_tappingSaveBarButtonItem_dismissesAddDeckViewControllerScreen() {
+        let saveBarButtonItem = addDeckViewController.navigationItem.rightBarButtonItem!
+
+
+        UIApplication.mab_tapNavBarButton(saveBarButtonItem)
+
+
+        XCTAssertTrue(fakeRouter.dismissPresentedViewController_wasCalled)
+    }
+
     func test_viewDidLoad_showsTitleTextFieldHeaderLabel() {
         XCTAssertEqual(
             addDeckViewController.titleTextFieldHeaderLabel.text,
