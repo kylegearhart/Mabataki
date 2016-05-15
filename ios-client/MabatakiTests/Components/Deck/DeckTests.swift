@@ -1,5 +1,5 @@
 import XCTest
-
+import Nimble
 @testable import Mabataki
 
 class DeckTests: XCTestCase {
@@ -7,31 +7,37 @@ class DeckTests: XCTestCase {
     func test_initializeDeck_createsDeckWithAppropriateDefaults() {
         let deck = Deck()
 
-        XCTAssert(deck.title == "")
-        XCTAssert(deck.cards == [])
+
+        expect(deck.title).to(equal(""))
+        expect(deck.cards).to(equal([]))
     }
     
     func test_initializingDeckWithTitle_setsCorrectTitle() {
         let deck = Deck(title: "New Deck!", cards: [])
-        
-        XCTAssert(deck.title == "New Deck!")
+
+
+        expect(deck.title).to(equal("New Deck!"))
     }
     
     func test_addCard_addsCardToDeck() {
         var deck = Deck()
-        
+
+
         let newCard = Card()
         deck.addCard(newCard)
-        
-        XCTAssert(deck.cards[0] == newCard)
+
+
+        expect(deck.cards[0]).to(equal(newCard))
     }
 
     func test_getCardAtIndexOutOfBounds_returnsNoCard() {
         let deck = Deck()
 
+
         let secondCard = deck.cardAtIndex(1)
 
-        XCTAssertNil(secondCard)
+
+        expect(secondCard).to(beNil())
     }
 
     func test_getCardAtIndexZero_givesFirstCard() {
@@ -39,10 +45,12 @@ class DeckTests: XCTestCase {
         let firstCard = Card(front: "First", back: "First")
         let secondCard = Card(front: "Second", back: "Second")
 
+
         deck.addCard(firstCard)
         deck.addCard(secondCard)
 
-        XCTAssert(deck.cardAtIndex(0)! == firstCard)
+
+        expect(deck.cardAtIndex(0)!).to(equal(firstCard))
     }
 
     func test_getCardAtIndexFour_givesFifthCard() {
@@ -53,12 +61,14 @@ class DeckTests: XCTestCase {
         let fourthCard = Card(front: "Fourth", back: "Fourth")
         let fifthCard = Card(front: "Fifth", back: "Fifth")
 
+
         deck.addCard(firstCard)
         deck.addCard(secondCard)
         deck.addCard(thirdCard)
         deck.addCard(fourthCard)
         deck.addCard(fifthCard)
 
-        XCTAssert(deck.cardAtIndex(4)! == fifthCard)
+
+        expect(deck.cardAtIndex(4)!).to(equal(fifthCard))
     }
 }

@@ -3,12 +3,12 @@
 class FakeNavigationRouter: Router {
     var showDeckListViewController_called = false
     func showDeckListViewController() {
-	showDeckListViewController_called = true
+        showDeckListViewController_called = true
     }
 
     var showAddDeckViewController_called = false
     func showAddDeckViewController() {
-	showAddDeckViewController_called = true
+        showAddDeckViewController_called = true
     }
     
     var dismissPresentedViewController_wasCalled = false

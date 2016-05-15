@@ -1,4 +1,5 @@
 import XCTest
+import Nimble
 
 @testable import Mabataki
 
@@ -7,13 +8,13 @@ class DeckListViewControllerTests: XCTestCase {
     func test_viewDidLoad_showsAddDeckNavBarButtonItemOnRight() {
         let fakeNavigationRouter = FakeNavigationRouter()
         let deckListViewController = DeckListViewController(router: fakeNavigationRouter)
-        
+
         
         deckListViewController.view.setNeedsLayout()
         
         
         let addDeckBarButtonItem = deckListViewController.navigationItem.rightBarButtonItem
-        XCTAssertEqual(addDeckBarButtonItem?.title, "Add Deck")
+        expect(addDeckBarButtonItem?.title).to(equal("Add Deck"))
     }
     
     func test_tappingAddDeckBarButtonItem_tellsRouterToShowAddDeckViewController() {
@@ -28,8 +29,8 @@ class DeckListViewControllerTests: XCTestCase {
             to: addDeckBarButtonItem?.target,
             from: self,
             forEvent: nil)
-        
-        
-        XCTAssertEqual(fakeNavigationRouter.showAddDeckViewController_called, true)
+
+
+        expect(fakeNavigationRouter.showAddDeckViewController_called).to(beTrue())
     }
 }

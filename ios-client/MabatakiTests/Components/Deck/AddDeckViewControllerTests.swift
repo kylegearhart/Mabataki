@@ -1,4 +1,5 @@
 import XCTest
+import Nimble
 @testable import Mabataki
 
 class AddDeckViewControllerTests: XCTestCase {
@@ -23,7 +24,7 @@ class AddDeckViewControllerTests: XCTestCase {
     }
     
     func test_viewDidLoad_showsCloseButton() {
-        XCTAssertEqual(addDeckViewController.navigationItem.leftBarButtonItem?.title, "Close")
+        expect(self.addDeckViewController.navigationItem.leftBarButtonItem?.title).to(equal("Close"))
     }
     
     func test_tappingCloseButton_informsRouterToDismissPresentedViewController() {
@@ -32,12 +33,12 @@ class AddDeckViewControllerTests: XCTestCase {
         
         UIApplication.mab_tapNavBarButton(closeBarButtonItem)
 
-        
-        XCTAssertTrue(fakeRouter.dismissPresentedViewController_wasCalled)
+
+        expect(self.fakeRouter.dismissPresentedViewController_wasCalled).to(beTrue())
     }
 
-    func test_viewDidLoad_showsSaveNavigationBarButtonItem() {
-        XCTAssertEqual(addDeckViewController.navigationItem.rightBarButtonItem?.title, "Save")
+    func test_viewDidLoad_showsSaveNavigationBarButtonItemOnRight() {
+        expect(self.addDeckViewController.navigationItem.rightBarButtonItem?.title).to(equal("Save"))
     }
 
     func test_tappingSaveBarButtonItem_savesDeckWithEnteredTitle() {
@@ -49,8 +50,8 @@ class AddDeckViewControllerTests: XCTestCase {
         UIApplication.mab_tapNavBarButton(saveBarButtonItem)
 
 
-        XCTAssertTrue(fakeDeckRepository.createDeck_wasCalled)
-        XCTAssertEqual(fakeDeckRepository.createDeck_arg, enteredTitle)
+        expect(self.fakeDeckRepository.createDeck_wasCalled).to(beTrue())
+        expect(self.fakeDeckRepository.createDeck_arg).to(equal(enteredTitle))
     }
 
     func test_tappingSaveBarButtonItem_dismissesAddDeckViewControllerScreen() {
@@ -60,19 +61,17 @@ class AddDeckViewControllerTests: XCTestCase {
         UIApplication.mab_tapNavBarButton(saveBarButtonItem)
 
 
-        XCTAssertTrue(fakeRouter.dismissPresentedViewController_wasCalled)
+        expect(self.fakeRouter.dismissPresentedViewController_wasCalled).to(beTrue())
     }
 
     func test_viewDidLoad_showsTitleTextFieldHeaderLabel() {
-        XCTAssertEqual(
-            addDeckViewController.titleTextFieldHeaderLabel.text,
-            "Title"
-        )
+        expect(self.addDeckViewController.titleTextFieldHeaderLabel.text).to(equal("Title"))
     }
 
     func test_viewDidAppear_showsTitleEntryTextFieldAsFirstResponder() {
         NSRunLoop.mab_advance(by: 1)
 
-        XCTAssertTrue(addDeckViewController.titleTextField.isFirstResponder())
+
+        expect(self.addDeckViewController.titleTextField.isFirstResponder()).to(beTrue())
     }
 }

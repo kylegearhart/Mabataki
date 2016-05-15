@@ -1,4 +1,5 @@
 import XCTest
+import Nimble
 @testable import Mabataki
 
 class NavigationRouterTests: XCTestCase {
@@ -18,8 +19,8 @@ class NavigationRouterTests: XCTestCase {
     func test_showDeckListScreen_pushesDeckListViewControllerToNavigationController() {
         navigationRouter.showDeckListViewController()
         
-        
-        XCTAssert(navigationController.topViewController!.isKindOfClass(DeckListViewController))
+
+        expect(self.navigationController.topViewController!).to(beAKindOf(DeckListViewController))
     }
     
     func test_showAddDeckScreen_presentsAddDeckViewControllerWithNavigationController() {
@@ -27,7 +28,7 @@ class NavigationRouterTests: XCTestCase {
         
         
         let presentedNavigationController = navigationController.presentedViewController as! UINavigationController
-        XCTAssert(presentedNavigationController.viewControllers[0].isKindOfClass(AddDeckViewController))
+        expect(presentedNavigationController.viewControllers[0]).to(beAKindOf(AddDeckViewController))
     }
     
     func test_dismissPresentedViewController_dismissedCurrentlyPresentedViewController() {
@@ -40,13 +41,13 @@ class NavigationRouterTests: XCTestCase {
             animated: false,
             completion: nil
         )
-        XCTAssertNotNil(navigationController.presentedViewController)
+        expect(self.navigationController.presentedViewController).toNot(beNil())
         
         
         navigationRouter.dismissPresentedViewController()
         NSRunLoop.mab_advance(by: 1)
         
-        
-        XCTAssertNil(navigationController.presentedViewController)
+
+        expect(self.navigationController.presentedViewController).to(beNil())
     }
 }
